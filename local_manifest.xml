@@ -2,15 +2,18 @@
 <manifest>
 	<!-- Remote names -->
 	<remote name="tv" fetch="https://github.com/TeamVee/" />
+	<remote name="tvss" fetch="https://github.com/TeamVee-SS/" />
 	<!-- Unofficial Builds -->
 	<remove-project name="CyanogenMod/android_packages_apps_CMUpdater" />
 	<remove-project name="CyanogenMod/android_prebuilt" />
+	<!-- SetupWizard -->
 	<project path="packages/apps/CMAccount" name="CyanogenMod/android_packages_apps_CMAccount" />
-	<!-- Falcon -->
-	<project path="device/sony/falconss" name="Caio99BR/android_device_sony_falconss" revision="cm-11.0"/>
-	<project path="vendor/sony/falconss" name="TeamVee-SS/android_device_sony_falconss" revision="cm-11.0"/>
-	<project path="kernel/sony/falconss" name="TeamVee-SS/android_kernel_sony_falconss" revision="LNX.LA.3.5.1_RB1.1" />
-	<project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" revision="cm-11.0"/>
+	<!-- Project FalconSS -->
+	<project path="device/sony/falconss" name="android_device_sony_falconss" revision="cm-11.0" remote="tvss" />
+	<project path="kernel/sony/falconss" name="android_kernel_sony_falconss" revision="cm-11.0" remote="tvss" />
+	<project path="vendor/sony/falconss" name="android_device_sony_falconss" revision="cm-11.0" remote="tvss" />
+	<!-- Sony Common -->
+	<project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" revision="cm-11.0" />
 	<!-- Team Vee TWRP -->
 	<project path="bootable/recovery-omni" name="android_bootable_recovery" revision="android-4.4" remote="tv" />
 </manifest>
