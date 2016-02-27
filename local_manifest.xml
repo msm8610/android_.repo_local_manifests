@@ -12,8 +12,11 @@
 	<project path="device/sony/falconss" name="android_device_sony_falconss" revision="cm-11.0" remote="tvss" />
 	<project path="kernel/sony/falconss" name="android_kernel_sony_falconss" revision="cm-11.0" remote="tvss" />
 	<project path="vendor/sony/falconss" name="android_vendor_sony_falconss" revision="cm-11.0" remote="tvss" />
-	<!-- Sony Common -->
+	<!-- QCOM Common -->
 	<project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" revision="cm-11.0" />
+	<project path="hardware/qcom/fm" name="CyanogenMod/android_hardware_qcom_fm" revision="cm-11.0" />
+	<project path="hardware/qcom/display-caf-new" name="CyanogenMod/android_hardware_qcom_display-caf-new" revision="cm-11.0" />
+	<project path="hardware/qcom/media-caf-new" name="CyanogenMod/android_hardware_qcom_media-caf-new" revision="cm-11.0" />
 	<!-- Team Vee TWRP -->
 	<project path="bootable/recovery-omni" name="android_bootable_recovery" revision="android-4.4" remote="tv" />
 </manifest>
