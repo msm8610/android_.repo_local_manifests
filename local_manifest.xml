@@ -6,8 +6,6 @@
 	<!-- Unofficial Builds -->
 	<remove-project name="CyanogenMod/android_packages_apps_CMUpdater" />
 	<remove-project name="CyanogenMod/android_prebuilt" />
-	<!-- SetupWizard -->
-	<project path="packages/apps/CMAccount" name="CyanogenMod/android_packages_apps_CMAccount" />
 	<!-- Project FalconSS -->
 	<project path="device/sony/falconss" name="android_device_sony_falconss" revision="cm-11.0" remote="tvss" />
 	<project path="kernel/sony/falconss" name="android_kernel_sony_falconss" revision="cm-11.0" remote="tvss" />
