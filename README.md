@@ -1,25 +1,40 @@
-CM11 Manifests
-========================
-Project FalconSS
+Manifest for Android KitKat / CyanogenMod 11.0
+====================================
+Project FalconSS|XperiaE1
 
-Local manifests to build Android KitKat 4.4 to Xperia E1 FalconSS
+---
 
-To initialize CM11 Repo:
+To initialize CyanogenMod 11.0 Repo:
 
     repo init -u git://github.com/CyanogenMod/android.git -b cm-11.0 -g all,-notdefault,-darwin
 
-To initialize Repo's:
+---
 
-    curl --create-dirs -L -o .repo/local_manifests/local_manifest.xml -O -L https://raw.github.com/TeamVee-SS/android_.repo_local_manifests/cm-11.0/local_manifest.xml
+To initialize Common Manifest:
 
-To sync:
+    curl --create-dirs -L -o .repo/local_manifests/common_manifest.xml -O -L https://raw.github.com/TeamVee-SS/android_.repo_local_manifests/cm-11.0/common_manifest.xml
+
+---
+
+To initialize Manifest for Xperia E1 devices:
+
+    curl --create-dirs -L -o .repo/local_manifests/falconss_manifest.xml -O -L https://raw.github.com/TeamVee-SS/android_.repo_local_manifests/cm-11.0/falconss_manifest.xml
+
+
+---
+
+Sync the repo:
 
     repo sync
 
-To initialize the environment:
+---
 
-    . build/envsetup.sh
+Initialize the environment:
 
-To build:
+    source build/envsetup.sh
+
+---
+
+To build for Xperia E1:
 
     brunch falconss
