@@ -10,12 +10,6 @@ To initialize CyanogenMod 11.0 Repo:
 
 ---
 
-To initialize Common Manifest:
-
-    curl --create-dirs -L -o .repo/local_manifests/common_manifest.xml -O -L https://raw.github.com/TeamVee-SS/android_.repo_local_manifests/cm-11.0/common_manifest.xml
-
----
-
 To initialize Manifest for Xperia E1 devices:
 
     curl --create-dirs -L -o .repo/local_manifests/falconss_manifest.xml -O -L https://raw.github.com/TeamVee-SS/android_.repo_local_manifests/cm-11.0/falconss_manifest.xml

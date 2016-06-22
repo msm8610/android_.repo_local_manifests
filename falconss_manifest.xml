@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 	<!-- Remote names -->
+	<remote name="tv" fetch="https://github.com/TeamVee/" />
 	<remote name="tvss" fetch="https://github.com/TeamVee-SS/" />
+	<!-- Unofficial Builds -->
+	<remove-project name="CyanogenMod/android_packages_apps_CMUpdater" />
+	<!-- QCOM Display CAF New -->
+	<project path="hardware/qcom/display-caf-new" name="CyanogenMod/android_hardware_qcom_display-caf-new" revision="cm-11.0" />
+	<project path="hardware/qcom/media-caf-new" name="CyanogenMod/android_hardware_qcom_media-caf-new" revision="cm-11.0" />
+	<!-- QCOM Common Device -->
+	<project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" revision="cm-11.0" />
+	<!-- TWRP -->
+	<project path="bootable/recovery-omni" name="android_bootable_recovery" revision="cm-11.0" remote="tv" />
 	<!-- Project FalconSS -->
 	<project path="device/sony/falconss" name="android_device_sony_falconss" revision="cm-11.0" remote="tvss" />
 	<project path="kernel/sony/falconss" name="android_kernel_sony_falconss" revision="cm-11.0" remote="tvss" />
