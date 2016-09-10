@@ -92,10 +92,15 @@ do
 	echo "  |"
 	echo "  | Starting Android Building!"
 
+	# Dont waste time building libwebviewchromium lib again
+	if [ -f "out/target/product/falconss/system/lib/libwebviewchromium.so" ]
+	then
+		export PRODUCT_PREBUILT_WEBVIEWCHROMIUM=yes
+	fi
+
 	# Device
 	echo "  |"
 	echo "  | For Sony Xperia E1"
-
 	_if_fail_break "brunch falconss"
 
 	# Exit
