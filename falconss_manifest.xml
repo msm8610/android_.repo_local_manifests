@@ -15,5 +15,5 @@
 	<!-- Project FalconSS -->
 	<project path="device/sony/falconss" name="android_device_sony_falconss" revision="cm-11.0" remote="tvss" />
 	<project path="kernel/sony/falconss" name="android_kernel_sony_falconss" revision="cm-11.0" remote="tvss" />
-	<project path="vendor/sony/falconss" name="android_vendor_sony_falconss" revision="cm-11.0" remote="tvss" />
+	<project path="vendor/sony" name="proprietary_vendor_sony" revision="cm-11.0" remote="tvss" />
 </manifest>
