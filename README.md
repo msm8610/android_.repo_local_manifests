@@ -1,4 +1,4 @@
-Manifest for Android KitKat / CyanogenMod 11.0
+Manifest for Android KitKat / LineageOS 11.0
 ====================================
 Project FalconSS|XperiaE1
 
@@ -18,9 +18,9 @@ To use:
 
 Manual Way:
 
-To initialize CyanogenMod 11.0 Repo:
+To initialize LineageOS 11.0 Repo:
 
-    repo init -u git://github.com/CyanogenMod/android.git -b cm-11.0 -g all,-notdefault,-darwin
+    repo init -u git://github.com/LineageOS/android.git -b cm-11.0 -g all,-notdefault,-darwin
 
 ---
 
