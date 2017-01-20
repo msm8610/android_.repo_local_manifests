@@ -11,7 +11,7 @@ while true
 do
 	_if_fail_break() {
 		${1}
-		if ! [ "${?}" == "0" ]
+		if [ "${?}" != "0" ]
 		then
 			echo "  |"
 			echo "  | Something failed!"
@@ -19,17 +19,6 @@ do
 			break
 		fi
 	}
-
-	# Check if is using 'BASH'
-	if [ ! "${BASH_VERSION}" ]
-	then
-		echo "  |"
-		echo "  | Please do not use 'sh' to run this script"
-		echo "  | Just use 'source build.sh'"
-		echo "  | Exiting from script!"
-		break
-	fi
-
 	# Check if 'repo' is installed
 	if [ ! "$(which repo)" ]
 	then
@@ -81,7 +70,13 @@ do
 	# Real 'repo sync'
 	echo "  |"
 	echo "  | Starting Sync:"
-	_if_fail_break "repo sync -q --force-sync"
+	if [ -f "build/envsetup.sh" ]
+	then
+		_if_fail_break "source build/envsetup.sh"
+		_if_fail_break "reposync -q --force-sync -f"
+	else
+		_if_fail_break "repo sync -q --force-sync -f"
+	fi
 
 	# Initialize environment
 	echo "  |"
