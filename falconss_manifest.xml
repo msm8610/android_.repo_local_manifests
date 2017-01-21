@@ -3,16 +3,17 @@
 	<!-- Remote names -->
 	<remote name="lineage" fetch="https://github.com/LineageOS/" />
 	<remote name="tvss" fetch="https://github.com/TeamVee-SS/" />
-	<remote name="tv" fetch="https://github.com/TeamVee/" />
 	<!-- Unofficial Builds -->
 	<remove-project name="LineageOS/android_packages_apps_CMUpdater" />
+	<!-- Adreno STLPort -->
+	<project path="external/stlport" name="android_external_stlport" revision="cm-13.0" remote="lineage" />
 	<!-- Qualcomm Projects -->
-	<project path="device/qcom/common" name="android_device_qcom_common" revision="cm-12.1" remote="lineage" />
-	<project path="hardware/qcom/fm" name="android_hardware_qcom_fm" revision="cm-12.1" remote="lineage" />
+	<project path="device/qcom/common" name="android_device_qcom_common" revision="cm-13.0" remote="lineage" />
 	<!-- TWRP -->
-	<project path="bootable/recovery-omni" name="android_bootable_recovery" revision="cm-12.1" remote="tv" />
+	<project path="bootable/recovery-omni" name="android_bootable_recovery" revision="android-6.0" remote="tvss" />
+	<project path="external/busybox" name="android_external_busybox" revision="cm-13.0" remote="lineage" />
 	<!-- Project FalconSS -->
-	<project path="device/sony/falconss" name="android_device_sony_falconss" revision="cm-12.1" remote="tvss" />
-	<project path="kernel/sony/falconss" name="android_kernel_sony_falconss" revision="cm-12.1" remote="tvss" />
-	<project path="vendor/sony" name="proprietary_vendor_sony" revision="cm-12.1" remote="tvss" />
+	<project path="device/sony/falconss" name="android_device_sony_falconss" revision="cm-13.0" remote="tvss" />
+	<project path="kernel/sony/falconss" name="android_kernel_sony_falconss" revision="cm-13.0" remote="tvss" />
+	<project path="vendor/sony" name="proprietary_vendor_sony" revision="cm-13.0" remote="tvss" />
 </manifest>
