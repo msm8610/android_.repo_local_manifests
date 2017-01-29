@@ -6,7 +6,7 @@
 	<!-- Unofficial Builds -->
 	<remove-project name="LineageOS/android_packages_apps_CMUpdater" />
 	<!-- Adreno STLPort -->
-	<project path="external/stlport" name="android_external_stlport" revision="cm-13.0" remote="lineage" />
+	<project path="hardware/sony/timekeep" name="android_hardware_sony_timekeep" revision="cm-13.0" remote="lineage" />
 	<!-- Qualcomm Projects -->
 	<project path="device/qcom/common" name="android_device_qcom_common" revision="cm-13.0" remote="lineage" />
 	<!-- TWRP -->
