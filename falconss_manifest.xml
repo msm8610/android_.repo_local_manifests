@@ -3,7 +3,6 @@
 	<!-- Remote names -->
 	<remote name="lineage" fetch="https://github.com/LineageOS/" />
 	<remote name="tvss" fetch="https://github.com/TeamVee-SS/" />
-	<remote name="omni" fetch="https://github.com/omnirom/" />
 	<!-- Unofficial Builds -->
 	<remove-project name="LineageOS/android_packages_apps_CMUpdater" />
 	<!-- Qualcomm Projects -->
@@ -12,7 +11,7 @@
 	<project path="device/qcom/common" name="android_device_qcom_common" revision="cm-11.0" remote="lineage" />
 	<project path="hardware/qcom/fm" name="android_hardware_qcom_fm" revision="cm-11.0" remote="lineage" />
 	<!-- TWRP -->
-	<project path="bootable/recovery-omni" name="android_bootable_recovery" revision="android-7.1" remote="omni" />
+	<project path="bootable/recovery-omni" name="android_bootable_recovery" revision="android-6.0" remote="tvss" />
 	<!-- Project FalconSS -->
 	<project path="device/sony/falconss" name="android_device_sony_falconss" revision="cm-11.0" remote="tvss" />
 	<project path="kernel/sony/falconss" name="android_kernel_sony_falconss" revision="cm-11.0" remote="tvss" />
