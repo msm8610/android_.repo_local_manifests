@@ -13,7 +13,7 @@
 	<!-- TWRP -->
 	<project path="bootable/recovery-omni" name="android_bootable_recovery" revision="android-6.0" remote="tvss" />
 	<!-- Project FalconSS -->
-	<project path="device/sony/falconss" name="android_device_sony_falconss" revision="cm-11.0" remote="tvss" />
+	<project path="device/sony/falconss" name="android_device_sony_falconss" revision="android-4.4" remote="tvss" />
 	<project path="kernel/sony/falconss" name="android_kernel_sony_falconss" revision="cm-11.0" remote="tvss" />
 	<project path="vendor/sony" name="proprietary_vendor_sony" revision="cm-11.0" remote="tvss" />
 </manifest>
