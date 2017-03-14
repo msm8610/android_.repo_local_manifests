@@ -70,13 +70,7 @@ do
 	# Real 'repo sync'
 	echo "  |"
 	echo "  | Starting Sync:"
-	if [ -f "build/envsetup.sh" ]
-	then
-		_if_fail_break "source build/envsetup.sh"
-		_if_fail_break "reposync -q --force-sync -f"
-	else
-		_if_fail_break "repo sync -q --force-sync -f"
-	fi
+	_if_fail_break "repo sync -q --force-sync -f"
 
 	# Initialize environment
 	echo "  |"
