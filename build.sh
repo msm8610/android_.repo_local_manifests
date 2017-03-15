@@ -76,7 +76,8 @@ do
 	echo "  |"
 	echo "  | Initialize the environment"
 	_if_fail_break "source build/envsetup.sh"
-	
+	sh device/lge/falconss/patches/apply.sh
+
 	# Builing Android
 	echo "  |"
 	echo "  | Starting Android Building!"
