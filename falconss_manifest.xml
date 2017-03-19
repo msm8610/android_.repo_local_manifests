@@ -6,6 +6,8 @@
 	<!-- Unofficial Builds -->
 	<remove-project name="LineageOS/android_packages_apps_CMUpdater" />
 	<!-- Qualcomm Projects -->
+	<project path="hardware/qcom/display-caf-bfam" name="android_hardware_qcom_display-caf-bfam" revision="cm-11.0" remote="tvss" />
+	<project path="hardware/qcom/media-caf-bfam" name="android_hardware_qcom_media-caf-bfam" revision="cm-11.0" remote="tvss" />
 	<project path="hardware/qcom/display-caf-new" name="android_hardware_qcom_display-caf-new" revision="cm-11.0" remote="lineage" />
 	<project path="hardware/qcom/media-caf-new" name="android_hardware_qcom_media-caf-new" revision="cm-11.0" remote="lineage" />
 	<project path="device/qcom/common" name="android_device_qcom_common" revision="cm-11.0" remote="lineage" />
