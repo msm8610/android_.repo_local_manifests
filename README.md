@@ -1,4 +1,4 @@
-Manifest for Android MarshMallow / LineageOS 13.0
+Manifest for Android Nougat / LineageOS 14.1 (WIP)
 ====================================
 Project FalconSS|XperiaE1
 
@@ -8,7 +8,7 @@ Automatic Way:
 
 script to download manifests, sync repo  and build:
 
-    curl --create-dirs -L -o build.sh -O -L https://raw.github.com/TeamVee-SS/android_.repo_local_manifests/cm-13.0/build.sh
+    curl --create-dirs -L -o build.sh -O -L https://raw.github.com/TeamVee-SS/android_.repo_local_manifests/cm-14.1/build.sh
 
 To use:
 
@@ -18,15 +18,15 @@ To use:
 
 Manual Way:
 
-To initialize LineageOS 13.0 Repo:
+To initialize LineageOS 14.1 Repo:
 
-    repo init -u git://github.com/LineageOS/android.git -b cm-13.0 -g all,-notdefault,-darwin
+    repo init -u git://github.com/LineageOS/android.git -b cm-14.1 -g all,-notdefault,-darwin
 
 ---
 
 To initialize Manifest for Xperia E1 devices:
 
-    curl --create-dirs -L -o .repo/local_manifests/falconss_manifest.xml -O -L https://raw.github.com/TeamVee-SS/android_.repo_local_manifests/cm-13.0/falconss_manifest.xml
+    curl --create-dirs -L -o .repo/local_manifests/falconss_manifest.xml -O -L https://raw.github.com/TeamVee-SS/android_.repo_local_manifests/cm-14.1/falconss_manifest.xml
 
 
 ---
