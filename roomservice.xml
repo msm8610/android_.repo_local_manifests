@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- SONY 8x10 Common Projects -->
+  <project name="LineageOS/android_device_qcom_common" path="device/qcom/common" remote="github" />
+  <project name="LineageOS/android_device_sony_common" path="device/sony/common" remote="github" />
+  <project name="LineageOS/android_hardware_sony_timekeep" path="hardware/sony/timekeep" remote="github" />
+
+  <!-- SONY 8x10 Vendor Projects -->
+  <project name="TeamVee-SS/proprietary_vendor_sony" path="vendor/sony" remote="github" />
+
+  <!-- SONY 8x10 FalconSS Projects -->
+  <project name="TeamVee-SS/android_device_sony_falconss" path="device/sony/falconss" remote="github" />
+  <project name="TeamVee-SS/android_kernel_sony_falconss" path="kernel/sony/msm8x10" remote="github" />
+
+</manifest>
