@@ -64,8 +64,8 @@ do
 
 	# Device manifest download
 	echo "  |"
-	echo "  | Downloading falconss_manifest.xml from ${_github_device_place} branch ${_custom_android}"
-	_if_fail_break "curl -# --create-dirs -L -o .repo/local_manifests/falconss_manifest.xml -O -L https://raw.github.com/${_github_device_place}/android_.repo_local_manifests/${_custom_android}/falconss_manifest.xml"
+	echo "  | Downloading Xperia E1 Manifest from ${_github_device_place} branch ${_custom_android}"
+	_if_fail_break "curl -# --create-dirs -L -o .repo/local_manifests/roomservice.xml -O -L https://raw.github.com/${_github_device_place}/android_.repo_local_manifests/${_custom_android}/roomservice.xml"
 
 	# Real 'repo sync'
 	echo "  |"
@@ -80,12 +80,6 @@ do
 	# Builing Android
 	echo "  |"
 	echo "  | Starting Android Building!"
-
-	# Dont waste time building libwebviewchromium lib again
-	if [ -f "out/target/product/falconss/system/lib/libwebviewchromium.so" ]
-	then
-		export PRODUCT_PREBUILT_WEBVIEWCHROMIUM=yes
-	fi
 
 	# Device
 	echo "  |"
