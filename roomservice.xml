@@ -10,7 +10,7 @@
   <project name="TeamVee-SS/proprietary_vendor_sony" path="vendor/sony" remote="github" />
 
   <!-- SONY 8x10 FalconSS Projects -->
-  <project name="TeamVee-SS/android_device_sony_falconss" path="device/sony/falconss" remote="github" />
-  <project name="TeamVee-SS/android_kernel_sony_falconss" path="kernel/sony/msm8x10" remote="github" />
+  <project name="TeamVee-SS/android_device_sony_shuang" path="device/sony/shuang" remote="github" />
+  <project name="TeamVee-SS/android_kernel_sony_msm8x10" path="kernel/sony/msm8x10" remote="github" />
 
 </manifest>
