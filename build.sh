@@ -87,7 +87,7 @@ do
 	# Device
 	echo "  |"
 	echo "  | For Sony Xperia E1"
-	_if_fail_break "brunch falconss"
+	_if_fail_break "brunch shuang"
 
 	# Exit
 	break

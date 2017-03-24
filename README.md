@@ -50,4 +50,4 @@ If Jack run out of memory <http://wiki.lineageos.org/mako_build.html#configure-j
 
 To build for Xperia E1:
 
-    brunch falconss
+    brunch shuang
