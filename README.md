@@ -1,6 +1,6 @@
 Manifest for Android Nougat / LineageOS 14.1 (WIP)
 ====================================
-Project FalconSS|XperiaE1
+Project Shuang|XperiaE1
 
 ---
 
@@ -26,8 +26,7 @@ To initialize LineageOS 14.1 Repo:
 
 To initialize Manifest for Xperia E1 devices:
 
-    curl --create-dirs -L -o .repo/local_manifests/falconss_manifest.xml -O -L https://raw.github.com/TeamVee-SS/android_.repo_local_manifests/cm-14.1/falconss_manifest.xml
-
+    curl --create-dirs -L -o .repo/local_manifests/roomservice.xml -O -L https://raw.github.com/TeamVee-SS/android_.repo_local_manifests/cm-14.1/roomservice.xml
 
 ---
 
@@ -40,6 +39,12 @@ Sync the repo:
 Initialize the environment:
 
     source build/envsetup.sh
+
+---
+
+If Jack run out of memory <http://wiki.lineageos.org/mako_build.html#configure-jack>:
+
+    export ANDROID_JACK_VM_ARGS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4G"
 
 ---
 

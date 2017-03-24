@@ -81,6 +81,9 @@ do
 	echo "  |"
 	echo "  | Starting Android Building!"
 
+	# See <http://wiki.lineageos.org/mako_build.html#configure-jack>
+	export ANDROID_JACK_VM_ARGS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4G"
+
 	# Device
 	echo "  |"
 	echo "  | For Sony Xperia E1"
