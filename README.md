@@ -6,7 +6,7 @@ Project Shuang|XperiaE1
 
 Automatic Way:
 
-script to download manifests, sync repo  and build:
+Script to download manifests, sync repo and build:
 
     curl --create-dirs -L -o build.sh -O -L https://raw.github.com/TeamVee-SS/android_.repo_local_manifests/cm-14.1/build.sh
 
@@ -39,12 +39,6 @@ Sync the repo:
 Initialize the environment:
 
     source build/envsetup.sh
-
----
-
-If Jack run out of memory <http://wiki.lineageos.org/mako_build.html#configure-jack>:
-
-    export ANDROID_JACK_VM_ARGS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4G"
 
 ---
 

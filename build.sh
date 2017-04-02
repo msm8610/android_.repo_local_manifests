@@ -80,14 +80,38 @@ do
 	# Builing Android
 	echo "  |"
 	echo "  | Starting Android Building!"
-
-	# See <http://wiki.lineageos.org/mako_build.html#configure-jack>
-	export ANDROID_JACK_VM_ARGS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4G"
-
-	# Device
-	echo "  |"
 	echo "  | For Sony Xperia E1"
-	_if_fail_break "brunch shuang"
+	if [[ "$(free -m | awk '/^Mem:/{print ${2}}')" -lt "4096" ]]
+	then
+		echo "  | Using Optimizations for building Android Nougat+ in 4GB RAM System"
+		echo "  | Forcing JACK VM to use only 3GB due low-ram"
+		sleep 5
+		export ANDROID_JACK_VM_ARGS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx3G"
+		echo "  | Forcing JACK Server to use only 1 Background Service"
+		sleep 5
+		if [[ -f "~/.jack-server/config.properties" ]]
+		then
+			if [[ "$(cat ~/.jack-server/config.properties | grep jack.server.max-service=1 | wc -l)" == "0" ]]
+			then
+				sed -i "/jack.server.max-service=*/c\jack.server.max-service=1" ~/.jack-server/config.properties
+			fi
+		fi
+		if [[ -f "~/.jack" ]]
+		then
+			if [[ "$(cat ~/.jack | grep SERVER_NB_COMPILE=1 | wc -l)" == "0" ]]
+			then
+				sed -i "/SERVER_NB_COMPILE=*/c\SERVER_NB_COMPILE=1" ~/.jack
+			fi
+		fi
+		echo "  | Cleaning old JACK Session"
+		sleep 5
+		rm -fr /tmp/jack-*
+		jack-admin kill-server
+		breakfast shuang
+		mka -j1 bacon
+	else
+		brunch shuang
+	fi
 
 	# Exit
 	break
