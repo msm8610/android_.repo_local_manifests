@@ -72,6 +72,13 @@ do
 	echo "  | Starting Sync:"
 	_if_fail_break "repo sync -q --force-sync -f"
 
+	# external/iw: Fix my builds
+	export CUR_DIR=$(pwd)
+	cd ${CUR_DIR}/external/iw
+	git fetch https://android.googlesource.com/platform/external/iw refs/changes/08/307208/1 && git cherry-pick FETCH_HEAD
+	git reset
+	cd ${CUR_DIR}/
+
 	# Initialize environment
 	echo "  |"
 	echo "  | Initialize the environment"
