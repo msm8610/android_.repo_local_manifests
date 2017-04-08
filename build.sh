@@ -115,7 +115,7 @@ do
 		rm -fr /tmp/jack-*
 		jack-admin kill-server
 		breakfast shuang
-		mka -j1 bacon
+		mka -j2 bacon
 	else
 		brunch shuang
 	fi
