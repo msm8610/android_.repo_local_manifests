@@ -1,6 +1,6 @@
 #!/bin/bash
 # Generic Variables
-_android="7.1.1"
+_android="7.1.2"
 _android_version="Nougat"
 _custom_android="cm-14.1"
 _custom_android_version="LineageOS14.1"
@@ -72,18 +72,24 @@ do
 	echo "  | Starting Sync:"
 	_if_fail_break "repo sync -q --force-sync -f"
 
-	# external/iw: Fix my builds
-	export CUR_DIR=$(pwd)
-	cd ${CUR_DIR}/external/iw
-	git fetch https://android.googlesource.com/platform/external/iw refs/changes/08/307208/1 && git cherry-pick FETCH_HEAD
-	git reset
-	cd ${CUR_DIR}/
+	# external/iw: Fix builds with .git at top
+	if [[ -d .git ]]
+	then
+		export CUR_DIR=$(pwd)
+		cd ${CUR_DIR}/external/iw
+		git fetch https://android.googlesource.com/platform/external/iw refs/changes/08/307208/1 && git cherry-pick FETCH_HEAD
+		git reset
+		cd ${CUR_DIR}/
+	fi
 
 	# Initialize environment
 	echo "  |"
 	echo "  | Initialize the environment"
 	_if_fail_break "source build/envsetup.sh"
-	
+
+	# SELinux please, don't skip starting a service with no domain if permissive
+	repopick -f 60713 142846
+
 	# Builing Android
 	echo "  |"
 	echo "  | Starting Android Building!"
