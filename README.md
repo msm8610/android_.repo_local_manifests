@@ -1,4 +1,4 @@
-Manifest for Android Nougat / LineageOS 14.1 (WIP)
+Manifest for Android Nougat / LineageOS 14.1
 ====================================
 Project Shuang|XperiaE1
 
