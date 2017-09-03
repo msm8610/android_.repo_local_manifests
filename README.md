@@ -1,4 +1,4 @@
-Manifest for Android Nougat / LineageOS 14.1
+Manifest for Android Oreo / LineageOS 15.0 (WIP)
 ====================================
 Project Shuang|XperiaE1
 
@@ -6,15 +6,15 @@ Project Shuang|XperiaE1
 
 Manual Way:
 
-To initialize LineageOS 14.1 Repo:
+To initialize LineageOS 15.0 Repo:
 
-    repo init -u git://github.com/LineageOS/android.git -b cm-14.1 -g all,-notdefault,-darwin
+    repo init -u git://github.com/LineageOS/android.git -b lineage-15.0 -g all,-notdefault,-darwin
 
 ---
 
 To initialize Manifest for Xperia E1 devices:
 
-    curl --create-dirs -L -o .repo/local_manifests/roomservice.xml -O -L https://raw.github.com/TeamVee-SS/android_.repo_local_manifests/cm-14.1/roomservice.xml
+    curl --create-dirs -L -o .repo/local_manifests/roomservice.xml -O -L https://raw.github.com/TeamVee-SS/android_.repo_local_manifests/lineage-15.0/roomservice.xml
 
 ---
 
