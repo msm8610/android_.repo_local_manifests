@@ -1,4 +1,4 @@
-Manifest for Android Nougat / LineageOS 14.1
+Manifest for Android 10 / LineageOS 17.1
 ====================================
 Project Shuang|XperiaE1
 
@@ -6,9 +6,9 @@ Project Shuang|XperiaE1
 
 Manual Way:
 
-To initialize LineageOS 14.1 Repo:
+To initialize LineageOS 17.1 Repo:
 
-    repo init -u git://github.com/LineageOS/android.git -b cm-14.1 -g all,-notdefault,-darwin
+    repo init -u git://github.com/LineageOS/android.git -b lineage-17.1
 
 ---
 
@@ -33,4 +33,8 @@ Initialize the environment:
 To build for Xperia E1:
 
     brunch shuang
+
+or
+    lunch
+    
 
