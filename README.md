@@ -14,7 +14,7 @@ To initialize LineageOS 17.1 Repo:
 
 To initialize Manifest for Xperia E1 devices:
 
-    curl --create-dirs -L -o .repo/local_manifests/roomservice.xml -O -L https://raw.github.com/TeamVee-SS/android_.repo_local_manifests/cm-14.1/roomservice.xml
+    curl --create-dirs -L -o .repo/local_manifests/roomservice.xml -O -L https://raw.githubusercontent.com/msm8610/android_.repo_local_manifests/lineage-17.1/roomservice.xml
 
 ---
 
