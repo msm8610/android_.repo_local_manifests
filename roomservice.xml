@@ -12,6 +12,7 @@
 
   <!-- SONY 8x10 Shuang Projects -->
   <project name="msm8610/android_device_sony_shuang" path="device/sony/shuang" remote="github" />
+  <project name="msm8610/sepolicy_legacy_shuang" path="device/qcom/sepolicy-shuang" remote="github" />
   <project name="msm8610/android_kernel_sony_msm8x10" path="kernel/sony/msm8x10" remote="github" />
 
   <!-- msm8610 Shuang Manifest -->
