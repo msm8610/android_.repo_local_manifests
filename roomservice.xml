@@ -6,6 +6,7 @@
   <project name="LineageOS/android_device_sony_common" path="device/sony/common" remote="github" />
   <!-- project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="github" / -->
   <project name="LineageOS/android_hardware_sony_timekeep" path="hardware/sony/timekeep" remote="github" />
+  <project name="msm8610/android_prebuilts_lineage-sdk" path="android/prebuilts/lineage-sdk" remote="github" />  
 
   <!-- SONY 8x10 Vendor Project -->
   <project name="msm8610/proprietary_vendor_sony" path="vendor/sony" remote="github" />
